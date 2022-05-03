@@ -89,3 +89,24 @@ html {
 .phone {
   margin-top: 40px;
 }
+
+@media screen and (max-width: 1200px) {
+  .main-title h1 {
+    font-size: 5rem;
+    width: 70%;
+    line-height: 6rem;
+  }
+
+  .main-title p {
+    width: 100%;
+  }
+
+  .main-title {
+    margin-top: 0;
+    width: 80%;
+  }
+
+  .content {
+    margin-top: 0px;
+  }
+}

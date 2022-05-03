@@ -12,18 +12,28 @@ li {
   list-style: none;
 }
 
+.ul-nav {
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  flex-direction: column;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  height: 60px;
 }
 
 .nav-list ul h2 {
   font-size: 2rem;
   color: white;
   font-weight: 400;
+  z-index: 10;
 }
 
 .header {
@@ -47,9 +57,35 @@ li {
   align-items: center;
   justify-content: center;
   width: 80px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-nav:hover {
+  background: var(--clr-grey-3);
 }
 
 .btn-nav h3 {
   font-weight: 400;
-  cursor: default;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-title h1 {
+    font-size: 5rem;
+    width: 70%;
+  }
+
+  .main-title p {
+    width: 100%;
+  }
+
+  .main-title {
+    margin-top: 0;
+    width: 80%;
+  }
+
+  .header {
+    margin-top: 5px;
+  }
 }

@@ -2,6 +2,10 @@ import React from "react";
 import "./css/Navbar.css";
 
 const Navbar = () => {
+  const classe = "ul-nav";
+
+  const displaySubMenu = () => {};
+
   return (
     <div className="header">
       <img
@@ -9,13 +13,13 @@ const Navbar = () => {
         alt=""
       />
       <li class="nav-list">
-        <ul>
+        <ul className={classe}>
           <h2>Products</h2>
         </ul>
-        <ul>
+        <ul className={classe} onMouseOver={displaySubMenu}>
           <h2>Developers</h2>
         </ul>
-        <ul>
+        <ul className={classe}>
           <h2>Company</h2>
         </ul>
       </li>
